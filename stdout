@@ -17,24 +17,10 @@ Scenario: the second day                                                        
 .
 Scenario: the third day                                                                                                                  # TwelveDays.feature:14
   Given I am singing                                                                                                                     # TwelveDaysStepDef.ImSinging()
-  When it is day 2                                                                                                                       # TwelveDaysStepDef.ItsDay(int)
+  When it is day 3                                                                                                                       # TwelveDaysStepDef.ItsDay(int)
   Then I hear "On the third day of Christmas My true love gave to me: Three french hens Two turtledoves and A partridge in a pear tree." # TwelveDaysStepDef.IHear(java.lang.String)
-      org.junit.ComparisonFailure: expected:<On the [third day of Christmas My true love gave to me: Three french hens] Two turtledoves and...> but was:<On the [second day of Christmas My true love gave to me:] Two turtledoves and...>
-	at org.junit.Assert.assertEquals(Assert.java:117)
-	at org.junit.Assert.assertEquals(Assert.java:146)
-	at TwelveDaysStepDef.IHear(TwelveDaysStepDef.java:21)
-	at ✽.I hear "On the third day of Christmas My true love gave to me: Three french hens Two turtledoves and A partridge in a pear tree."(classpath:TwelveDays.feature:17)
 
-E
-Time: 0.217
-There was 1 failure:
-1) the third day(singing 12 days of Christmas)
-org.junit.ComparisonFailure: expected:<On the [third day of Christmas My true love gave to me: Three french hens] Two turtledoves and...> but was:<On the [second day of Christmas My true love gave to me:] Two turtledoves and...>
-	at org.junit.Assert.assertEquals(Assert.java:117)
-	at org.junit.Assert.assertEquals(Assert.java:146)
-	at TwelveDaysStepDef.IHear(TwelveDaysStepDef.java:21)
-	at ✽.I hear "On the third day of Christmas My true love gave to me: Three french hens Two turtledoves and A partridge in a pear tree."(classpath:TwelveDays.feature:17)
+Time: 0.238
 
-FAILURES!!!
-Tests run: 4,  Failures: 1
+OK (4 tests)
 
