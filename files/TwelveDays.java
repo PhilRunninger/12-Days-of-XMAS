@@ -11,13 +11,13 @@ public class TwelveDays
             "Three french hens",
             "Four calling birds"};
 
-        String result = String.format("On the %s day of Christmas My true love gave to me:", days[day-1]);
+        String result = String.format("On the %s day of Christmas,\nMy true love gave to me:", days[day-1]);
         for (int i=day; i>0; i--)
         {
-            if (i == 1 && day > 1) {
+            result += String.format("\n%s", loot[i-1]);
+            if (i == 2 && day > 1) {
                 result += " and";
             }
-            result += String.format(" %s", loot[i-1]);
         }
         result += ".";
         return result;
