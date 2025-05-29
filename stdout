@@ -9,8 +9,27 @@ Scenario: the first day                                                         
   Given I am singing                                                                               # TwelveDaysStepDef.ImSinging()
   When it is day 1                                                                                 # TwelveDaysStepDef.ItsDay(int)
   Then I hear "On the first day of Christmas My true love gave to me: A partridge in a pear tree." # TwelveDaysStepDef.IHear(java.lang.String)
+.
+Scenario: the second day                                                                                                # TwelveDays.feature:9
+  Given I am singing                                                                                                    # TwelveDaysStepDef.ImSinging()
+  When it is day 2                                                                                                      # TwelveDaysStepDef.ItsDay(int)
+  Then I hear "On the second day of Christmas My true love gave to me: Two turtledoves and A partridge in a pear tree." # TwelveDaysStepDef.IHear(java.lang.String)
+      org.junit.ComparisonFailure: expected:<On the [second day of Christmas My true love gave to me: Two turtledoves and] A partridge in a pe...> but was:<On the [first day of Christmas My true love gave to me:] A partridge in a pe...>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at TwelveDaysStepDef.IHear(TwelveDaysStepDef.java:21)
+	at ✽.I hear "On the second day of Christmas My true love gave to me: Two turtledoves and A partridge in a pear tree."(classpath:TwelveDays.feature:12)
 
-Time: 0.24
+E
+Time: 0.241
+There was 1 failure:
+1) the second day(singing 12 days of Christmas)
+org.junit.ComparisonFailure: expected:<On the [second day of Christmas My true love gave to me: Two turtledoves and] A partridge in a pe...> but was:<On the [first day of Christmas My true love gave to me:] A partridge in a pe...>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at TwelveDaysStepDef.IHear(TwelveDaysStepDef.java:21)
+	at ✽.I hear "On the second day of Christmas My true love gave to me: Two turtledoves and A partridge in a pear tree."(classpath:TwelveDays.feature:12)
 
-OK (2 tests)
+FAILURES!!!
+Tests run: 3,  Failures: 1
 
