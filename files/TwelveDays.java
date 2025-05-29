@@ -20,7 +20,7 @@ public class TwelveDays
         String[] days = {"first", "second", "third", "fourth", "fifth", "sixth", "seventh", "eighth", "ninth", "tenth", "eleventh", "twelfth"};
         String[] loot = {
             "A partridge in a pear tree",
-            "Two turtledoves",
+            "Two turtle doves",
             "Three french hens",
             "Four calling birds",
             "Five golden rings",
