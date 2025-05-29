@@ -15,6 +15,7 @@ public class TwelveDays
             }
             result += String.format(" %s", loot[day-1]);
         }
+        result += ".";
         return result;
     }
 }
