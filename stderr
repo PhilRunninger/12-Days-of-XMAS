@@ -1,6 +1,37 @@
-TwelveDaysStepDef.java:16: error: cannot find symbol
-        loot = TwelveDays.sing(day);
+TwelveDays.java:5: error: illegal character: '`'
+        return `On the first day of Christmas
                ^
-  symbol:   variable TwelveDays
-  location: class TwelveDaysStepDef
-1 error
+TwelveDays.java:5: error: ';' expected
+        return `On the first day of Christmas
+                      ^
+TwelveDays.java:5: error: ';' expected
+        return `On the first day of Christmas
+                                ^
+TwelveDays.java:5: error: ';' expected
+        return `On the first day of Christmas
+                                             ^
+TwelveDays.java:6: error: not a statement
+My true love gave to me:
+^
+TwelveDays.java:6: error: ';' expected
+My true love gave to me:
+  ^
+TwelveDays.java:6: error: ';' expected
+My true love gave to me:
+                 ^
+TwelveDays.java:6: error: ';' expected
+My true love gave to me:
+                       ^
+TwelveDays.java:7: error: ';' expected
+A partridge in a pear tree.`
+           ^
+TwelveDays.java:7: error: ';' expected
+A partridge in a pear tree.`
+                ^
+TwelveDays.java:7: error: ';' expected
+A partridge in a pear tree.`
+                          ^
+TwelveDays.java:7: error: illegal character: '`'
+A partridge in a pear tree.`
+                           ^
+12 errors
