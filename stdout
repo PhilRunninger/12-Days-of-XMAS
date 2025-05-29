@@ -14,22 +14,8 @@ Scenario: the second day                                                        
   Given I am singing                                                                                                    # TwelveDaysStepDef.ImSinging()
   When it is day 2                                                                                                      # TwelveDaysStepDef.ItsDay(int)
   Then I hear "On the second day of Christmas My true love gave to me: Two turtledoves and A partridge in a pear tree." # TwelveDaysStepDef.IHear(java.lang.String)
-      org.junit.ComparisonFailure: expected:<...ve to me: Two turtle[]doves and A partridg...> but was:<...ve to me: Two turtle[ ]doves and A partridg...>
-	at org.junit.Assert.assertEquals(Assert.java:117)
-	at org.junit.Assert.assertEquals(Assert.java:146)
-	at TwelveDaysStepDef.IHear(TwelveDaysStepDef.java:21)
-	at ✽.I hear "On the second day of Christmas My true love gave to me: Two turtledoves and A partridge in a pear tree."(classpath:TwelveDays.feature:12)
 
-E
-Time: 0.212
-There was 1 failure:
-1) the second day(singing 12 days of Christmas)
-org.junit.ComparisonFailure: expected:<...ve to me: Two turtle[]doves and A partridg...> but was:<...ve to me: Two turtle[ ]doves and A partridg...>
-	at org.junit.Assert.assertEquals(Assert.java:117)
-	at org.junit.Assert.assertEquals(Assert.java:146)
-	at TwelveDaysStepDef.IHear(TwelveDaysStepDef.java:21)
-	at ✽.I hear "On the second day of Christmas My true love gave to me: Two turtledoves and A partridge in a pear tree."(classpath:TwelveDays.feature:12)
+Time: 0.231
 
-FAILURES!!!
-Tests run: 3,  Failures: 1
+OK (3 tests)
 
