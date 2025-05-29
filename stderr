@@ -3,9 +3,9 @@ TwelveDays.java:9: error: cannot find symbol
             ^
   symbol:   variable result
   location: class TwelveDays
-TwelveDays.java:10: error: cannot find symbol
-            if (day < 12) result += "\n\n";
-                          ^
+TwelveDays.java:11: error: cannot find symbol
+                result += "\n\n";
+                ^
   symbol:   variable result
   location: class TwelveDays
 2 errors

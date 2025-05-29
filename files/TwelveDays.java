@@ -7,7 +7,9 @@ public class TwelveDays
         for (int day=1; day<=12; day++)
         {
             result += sing(day);
-            if (day < 12) result += "\n\n";
+            if (day < 12) {
+                result += "\n\n";
+            }
         }
     }
     
