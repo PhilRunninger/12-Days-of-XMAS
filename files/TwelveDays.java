@@ -32,7 +32,7 @@ public class TwelveDays
             "Eleven pipers piping",
             "Twelve drummers drumming"};
 
-        String result = String.format("On the %s day of Christmas,\nMy true love gave to me:", days[day-1]);
+        String result = String.format("On the %s day of Christmas%s\nMy true love gave to me:", days[day-1], (day > 5) ? "," : "");
         for (int i=day; i>0; i--)
         {
             result += String.format("\n%s", loot[i-1]);

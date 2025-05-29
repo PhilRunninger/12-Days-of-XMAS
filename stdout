@@ -9,133 +9,93 @@ Scenario: the first day # TwelveDays.feature:4
   Given I am singing    # TwelveDaysStepDef.ImSinging()
   When it is day 1      # TwelveDaysStepDef.ItsDay(int)
   Then I hear           # TwelveDaysStepDef.IHear(java.lang.String)
-.
+      org.junit.ComparisonFailure: expected:<...rst day of Christmas[,]
+My true love gave t...> but was:<...rst day of Christmas[]
+My true love gave t...>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at TwelveDaysStepDef.IHear(TwelveDaysStepDef.java:27)
+	at ✽.I hear(classpath:TwelveDays.feature:7)
+
+E.
 Scenario: the second day # TwelveDays.feature:14
   Given I am singing     # TwelveDaysStepDef.ImSinging()
   When it is day 2       # TwelveDaysStepDef.ItsDay(int)
   Then I hear            # TwelveDaysStepDef.IHear(java.lang.String)
-.
+      org.junit.ComparisonFailure: expected:<...ond day of Christmas[,]
+My true love gave t...> but was:<...ond day of Christmas[]
+My true love gave t...>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at TwelveDaysStepDef.IHear(TwelveDaysStepDef.java:27)
+	at ✽.I hear(classpath:TwelveDays.feature:17)
+
+E.
 Scenario: the third day # TwelveDays.feature:25
   Given I am singing    # TwelveDaysStepDef.ImSinging()
   When it is day 3      # TwelveDaysStepDef.ItsDay(int)
   Then I hear           # TwelveDaysStepDef.IHear(java.lang.String)
-.
+      org.junit.ComparisonFailure: expected:<...ird day of Christmas[,]
+My true love gave t...> but was:<...ird day of Christmas[]
+My true love gave t...>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at TwelveDaysStepDef.IHear(TwelveDaysStepDef.java:27)
+	at ✽.I hear(classpath:TwelveDays.feature:28)
+
+E.
 Scenario: the third day # TwelveDays.feature:37
   Given I am singing    # TwelveDaysStepDef.ImSinging()
   When it is day 4      # TwelveDaysStepDef.ItsDay(int)
   Then I hear           # TwelveDaysStepDef.IHear(java.lang.String)
-.
+      org.junit.ComparisonFailure: expected:<...rth day of Christmas[,]
+My true love gave t...> but was:<...rth day of Christmas[]
+My true love gave t...>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at TwelveDaysStepDef.IHear(TwelveDaysStepDef.java:27)
+	at ✽.I hear(classpath:TwelveDays.feature:40)
+
+E.
 Scenario: the whole enchilada       # TwelveDays.feature:50
   Given I am singing the whole song # TwelveDaysStepDef.ImSingingTheWholeSong()
   Then I hear                       # TwelveDaysStepDef.IHear(java.lang.String)
-      org.junit.ComparisonFailure: expected:<...rst day of Christmas[
-My true love gave to me:
-A partridge in a pear tree.
 
-On the second day of Christmas
-My true love gave to me:
-Two turtle doves and
-A partridge in a pear tree.
-
-On the third day of Christmas
-My true love gave to me:
-Three french hens
-Two turtle doves and
-A partridge in a pear tree.
-
-On the fourth day of Christmas
-My true love gave to me:
-Four calling birds
-Three french hens
-Two turtle doves and
-A partridge in a pear tree.
-
-On the fifth day of Christmas]
-My true love gave t...> but was:<...rst day of Christmas[,
-My true love gave to me:
-A partridge in a pear tree.
-
-On the second day of Christmas,
-My true love gave to me:
-Two turtle doves and
-A partridge in a pear tree.
-
-On the third day of Christmas,
-My true love gave to me:
-Three french hens
-Two turtle doves and
-A partridge in a pear tree.
-
-On the fourth day of Christmas,
-My true love gave to me:
-Four calling birds
-Three french hens
-Two turtle doves and
-A partridge in a pear tree.
-
-On the fifth day of Christmas,]
+Time: 0.232
+There were 4 failures:
+1) the first day(singing 12 days of Christmas)
+org.junit.ComparisonFailure: expected:<...rst day of Christmas[,]
+My true love gave t...> but was:<...rst day of Christmas[]
 My true love gave t...>
 	at org.junit.Assert.assertEquals(Assert.java:117)
 	at org.junit.Assert.assertEquals(Assert.java:146)
 	at TwelveDaysStepDef.IHear(TwelveDaysStepDef.java:27)
-	at ✽.I hear(classpath:TwelveDays.feature:52)
-
-E
-Time: 0.214
-There was 1 failure:
-1) the whole enchilada(singing 12 days of Christmas)
-org.junit.ComparisonFailure: expected:<...rst day of Christmas[
-My true love gave to me:
-A partridge in a pear tree.
-
-On the second day of Christmas
-My true love gave to me:
-Two turtle doves and
-A partridge in a pear tree.
-
-On the third day of Christmas
-My true love gave to me:
-Three french hens
-Two turtle doves and
-A partridge in a pear tree.
-
-On the fourth day of Christmas
-My true love gave to me:
-Four calling birds
-Three french hens
-Two turtle doves and
-A partridge in a pear tree.
-
-On the fifth day of Christmas]
-My true love gave t...> but was:<...rst day of Christmas[,
-My true love gave to me:
-A partridge in a pear tree.
-
-On the second day of Christmas,
-My true love gave to me:
-Two turtle doves and
-A partridge in a pear tree.
-
-On the third day of Christmas,
-My true love gave to me:
-Three french hens
-Two turtle doves and
-A partridge in a pear tree.
-
-On the fourth day of Christmas,
-My true love gave to me:
-Four calling birds
-Three french hens
-Two turtle doves and
-A partridge in a pear tree.
-
-On the fifth day of Christmas,]
+	at ✽.I hear(classpath:TwelveDays.feature:7)
+2) the second day(singing 12 days of Christmas)
+org.junit.ComparisonFailure: expected:<...ond day of Christmas[,]
+My true love gave t...> but was:<...ond day of Christmas[]
 My true love gave t...>
 	at org.junit.Assert.assertEquals(Assert.java:117)
 	at org.junit.Assert.assertEquals(Assert.java:146)
 	at TwelveDaysStepDef.IHear(TwelveDaysStepDef.java:27)
-	at ✽.I hear(classpath:TwelveDays.feature:52)
+	at ✽.I hear(classpath:TwelveDays.feature:17)
+3) the third day #1(singing 12 days of Christmas)
+org.junit.ComparisonFailure: expected:<...ird day of Christmas[,]
+My true love gave t...> but was:<...ird day of Christmas[]
+My true love gave t...>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at TwelveDaysStepDef.IHear(TwelveDaysStepDef.java:27)
+	at ✽.I hear(classpath:TwelveDays.feature:28)
+4) the third day #2(singing 12 days of Christmas)
+org.junit.ComparisonFailure: expected:<...rth day of Christmas[,]
+My true love gave t...> but was:<...rth day of Christmas[]
+My true love gave t...>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at TwelveDaysStepDef.IHear(TwelveDaysStepDef.java:27)
+	at ✽.I hear(classpath:TwelveDays.feature:40)
 
 FAILURES!!!
-Tests run: 6,  Failures: 1
+Tests run: 6,  Failures: 4
 
