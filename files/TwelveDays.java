@@ -14,15 +14,23 @@ public class TwelveDays
         }
         return result;
     }
-    
+
     public static String sing(int day)
     {
-        String[] days = {"first", "second", "third", "fourth"};
+        String[] days = {"first", "second", "third", "fourth", "fifth", "sixth", "seventh", "eighth", "ninth", "tenth", "eleventh", "twelfth"};
         String[] loot = {
             "A partridge in a pear tree",
             "Two turtledoves",
             "Three french hens",
-            "Four calling birds"};
+            "Four calling birds",
+            "Five golden rings",
+            "Six geese a-laying",
+            "Seven swans a-swimming",
+            "Eight maids a-milking",
+            "Nine ladies dancing",
+            "Ten lords a-leaping",
+            "Eleven pipers piping",
+            "Twelve drummers drumming"};
 
         String result = String.format("On the %s day of Christmas,\nMy true love gave to me:", days[day-1]);
         for (int i=day; i>0; i--)
