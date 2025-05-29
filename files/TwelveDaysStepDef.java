@@ -17,7 +17,7 @@ public class TwelveDaysStepDef {
     }
 
     @Then("I hear {string}")
-    public void IHear(int expected) throws Throwable {
+    public void IHear(String expected) throws Throwable {
         assertEquals(expected, loot);
     }
 }
