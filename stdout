@@ -26,7 +26,7 @@ Scenario: the third day                                                         
 	at ✽.I hear "On the third day of Christmas My true love gave to me: Three french hens Two turtledoves and A partridge in a pear tree."(classpath:TwelveDays.feature:17)
 
 E
-Time: 0.279
+Time: 0.217
 There was 1 failure:
 1) the third day(singing 12 days of Christmas)
 org.junit.ComparisonFailure: expected:<On the [third day of Christmas My true love gave to me: Three french hens] Two turtledoves and...> but was:<On the [second day of Christmas My true love gave to me:] Two turtledoves and...>
