@@ -91,5 +91,21 @@
       14,
       203279
     ]
+  },
+  {
+    "duration": 2.480015,
+    "colour": "amber",
+    "predicted": "none",
+    "revert_if_wrong": "off",
+    "index": 6,
+    "time": [
+      2025,
+      5,
+      29,
+      4,
+      43,
+      34,
+      292091
+    ]
   }
 ]

@@ -1,4 +1,4 @@
-TwelveDays.java:5: error: ';' expected
-        return "On the first day of Christmas\nMy true love gave to me:\nA partridge in a pear tree."
-                                                                                                     ^
+TwelveDaysStepDef.java:16: error: non-static method sing(int) cannot be referenced from a static context
+        loot = TwelveDays.sing(day);
+                         ^
 1 error
