@@ -1,0 +1,22 @@
+{
+  "display_name": "Java 21, Cucumber 7.20.1 with JUnit 4",
+  "image_name": "ghcr.io/cyber-dojo-languages/java_cucumber_pico:1b7cee5",
+  "filename_extension": [
+    ".java",
+    ".feature"
+  ],
+  "max_seconds": 15,
+  "tab_size": 4,
+  "exercise": "12 Days of Xmas",
+  "version": 2,
+  "created": [
+    2025,
+    5,
+    29,
+    3,
+    31,
+    1,
+    819846
+  ],
+  "id": "2pNnrF"
+}
