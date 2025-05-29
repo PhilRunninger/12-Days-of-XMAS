@@ -8,96 +8,56 @@ Scenario: hitch-hiker playing scrabble in the past # Hiker.feature:5
 Scenario: the first day # TwelveDays.feature:4
   Given I am singing    # TwelveDaysStepDef.ImSinging()
   When it is day 1      # TwelveDaysStepDef.ItsDay(int)
-  Then I hear
-E.
+  Then I hear           # TwelveDaysStepDef.IHear(java.lang.String)
+.
 Scenario: the second day                                                                                                    # TwelveDays.feature:14
   Given I am singing                                                                                                        # TwelveDaysStepDef.ImSinging()
   When it is day 2                                                                                                          # TwelveDaysStepDef.ItsDay(int)
-  Then I hear "On the second day of Christmas,\nMy true love gave to me:\nTwo turtledoves and\nA partridge in a pear tree." # TwelveDaysStepDef.IHear(java.lang.String)
-      org.junit.ComparisonFailure: expected:<...nd day of Christmas,[\nMy true love gave to me:\nTwo turtledoves and\n]A partridge in a pea...> but was:<...nd day of Christmas,[
-My true love gave to me:
-Two turtledoves and
-]A partridge in a pea...>
-	at org.junit.Assert.assertEquals(Assert.java:117)
-	at org.junit.Assert.assertEquals(Assert.java:146)
-	at TwelveDaysStepDef.IHear(TwelveDaysStepDef.java:21)
-	at ✽.I hear "On the second day of Christmas,\nMy true love gave to me:\nTwo turtledoves and\nA partridge in a pear tree."(classpath:TwelveDays.feature:17)
-
+  Then I hear "On the second day of Christmas,\nMy true love gave to me:\nTwo turtledoves and\nA partridge in a pear tree."
 E.
 Scenario: the third day                                                                                                                       # TwelveDays.feature:19
   Given I am singing                                                                                                                          # TwelveDaysStepDef.ImSinging()
   When it is day 3                                                                                                                            # TwelveDaysStepDef.ItsDay(int)
-  Then I hear "On the third day of Christmas,\nMy true love gave to me:\nThree french hens\nTwo turtledoves and\nA partridge in a pear tree." # TwelveDaysStepDef.IHear(java.lang.String)
-      org.junit.ComparisonFailure: expected:<...rd day of Christmas,[\nMy true love gave to me:\nThree french hens\nTwo turtledoves and\n]A partridge in a pea...> but was:<...rd day of Christmas,[
-My true love gave to me:
-Three french hens
-Two turtledoves and
-]A partridge in a pea...>
-	at org.junit.Assert.assertEquals(Assert.java:117)
-	at org.junit.Assert.assertEquals(Assert.java:146)
-	at TwelveDaysStepDef.IHear(TwelveDaysStepDef.java:21)
-	at ✽.I hear "On the third day of Christmas,\nMy true love gave to me:\nThree french hens\nTwo turtledoves and\nA partridge in a pear tree."(classpath:TwelveDays.feature:22)
-
+  Then I hear "On the third day of Christmas,\nMy true love gave to me:\nThree french hens\nTwo turtledoves and\nA partridge in a pear tree."
 E.
 Scenario: the third day                                                                                                                                            # TwelveDays.feature:24
   Given I am singing                                                                                                                                               # TwelveDaysStepDef.ImSinging()
   When it is day 4                                                                                                                                                 # TwelveDaysStepDef.ItsDay(int)
-  Then I hear "On the fourth day of Christmas,\nMy true love gave to me:\nFour calling birds\nThree french hens\nTwo turtledoves and\nA partridge in a pear tree." # TwelveDaysStepDef.IHear(java.lang.String)
-      org.junit.ComparisonFailure: expected:<...th day of Christmas,[\nMy true love gave to me:\nFour calling birds\nThree french hens\nTwo turtledoves and\n]A partridge in a pea...> but was:<...th day of Christmas,[
-My true love gave to me:
-Four calling birds
-Three french hens
-Two turtledoves and
-]A partridge in a pea...>
-	at org.junit.Assert.assertEquals(Assert.java:117)
-	at org.junit.Assert.assertEquals(Assert.java:146)
-	at TwelveDaysStepDef.IHear(TwelveDaysStepDef.java:21)
-	at ✽.I hear "On the fourth day of Christmas,\nMy true love gave to me:\nFour calling birds\nThree french hens\nTwo turtledoves and\nA partridge in a pear tree."(classpath:TwelveDays.feature:27)
-
+  Then I hear "On the fourth day of Christmas,\nMy true love gave to me:\nFour calling birds\nThree french hens\nTwo turtledoves and\nA partridge in a pear tree."
 E
-Time: 0.297
-There were 4 failures:
-1) the first day(singing 12 days of Christmas)
-io.cucumber.junit.UndefinedStepException: The step 'I hear' is undefined.
+Time: 0.267
+There were 3 failures:
+1) the second day(singing 12 days of Christmas)
+io.cucumber.junit.UndefinedStepException: The step 'I hear "On the second day of Christmas,\nMy true love gave to me:\nTwo turtledoves and\nA partridge in a pear tree."' is undefined.
 You can implement this step using the snippet(s) below:
 
-@Then("I hear")
-public void i_hear(String docString) {
+@Then("I hear {string}")
+public void i_hear(String string) {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();
 }
 
-2) the second day(singing 12 days of Christmas)
-org.junit.ComparisonFailure: expected:<...nd day of Christmas,[\nMy true love gave to me:\nTwo turtledoves and\n]A partridge in a pea...> but was:<...nd day of Christmas,[
-My true love gave to me:
-Two turtledoves and
-]A partridge in a pea...>
-	at org.junit.Assert.assertEquals(Assert.java:117)
-	at org.junit.Assert.assertEquals(Assert.java:146)
-	at TwelveDaysStepDef.IHear(TwelveDaysStepDef.java:21)
-	at ✽.I hear "On the second day of Christmas,\nMy true love gave to me:\nTwo turtledoves and\nA partridge in a pear tree."(classpath:TwelveDays.feature:17)
-3) the third day #1(singing 12 days of Christmas)
-org.junit.ComparisonFailure: expected:<...rd day of Christmas,[\nMy true love gave to me:\nThree french hens\nTwo turtledoves and\n]A partridge in a pea...> but was:<...rd day of Christmas,[
-My true love gave to me:
-Three french hens
-Two turtledoves and
-]A partridge in a pea...>
-	at org.junit.Assert.assertEquals(Assert.java:117)
-	at org.junit.Assert.assertEquals(Assert.java:146)
-	at TwelveDaysStepDef.IHear(TwelveDaysStepDef.java:21)
-	at ✽.I hear "On the third day of Christmas,\nMy true love gave to me:\nThree french hens\nTwo turtledoves and\nA partridge in a pear tree."(classpath:TwelveDays.feature:22)
-4) the third day #2(singing 12 days of Christmas)
-org.junit.ComparisonFailure: expected:<...th day of Christmas,[\nMy true love gave to me:\nFour calling birds\nThree french hens\nTwo turtledoves and\n]A partridge in a pea...> but was:<...th day of Christmas,[
-My true love gave to me:
-Four calling birds
-Three french hens
-Two turtledoves and
-]A partridge in a pea...>
-	at org.junit.Assert.assertEquals(Assert.java:117)
-	at org.junit.Assert.assertEquals(Assert.java:146)
-	at TwelveDaysStepDef.IHear(TwelveDaysStepDef.java:21)
-	at ✽.I hear "On the fourth day of Christmas,\nMy true love gave to me:\nFour calling birds\nThree french hens\nTwo turtledoves and\nA partridge in a pear tree."(classpath:TwelveDays.feature:27)
+2) the third day #1(singing 12 days of Christmas)
+io.cucumber.junit.UndefinedStepException: The step 'I hear "On the third day of Christmas,\nMy true love gave to me:\nThree french hens\nTwo turtledoves and\nA partridge in a pear tree."' is undefined.
+You can implement this step using the snippet(s) below:
+
+@Then("I hear {string}")
+public void i_hear(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+3) the third day #2(singing 12 days of Christmas)
+io.cucumber.junit.UndefinedStepException: The step 'I hear "On the fourth day of Christmas,\nMy true love gave to me:\nFour calling birds\nThree french hens\nTwo turtledoves and\nA partridge in a pear tree."' is undefined.
+You can implement this step using the snippet(s) below:
+
+@Then("I hear {string}")
+public void i_hear(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
 
 FAILURES!!!
-Tests run: 5,  Failures: 4
+Tests run: 5,  Failures: 3
 
