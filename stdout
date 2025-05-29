@@ -2,28 +2,10 @@ JUnit version 4.13.2
 .
 Scenario: hitch-hiker playing scrabble in the past # Hiker.feature:5
   Given the hitch-hiker selects some tiles         # HikerStepDef.theHitchHikerSelectsSomeTiles()
-  When they spell 6 times 9                        # HikerStepDef.theySpellTimes(int,int)
+  When they spell 6 times 7                        # HikerStepDef.theySpellTimes(int,int)
   Then the score is 42                             # HikerStepDef.theScoreIs(int)
-      java.lang.AssertionError: expected:<42> but was:<54>
-	at org.junit.Assert.fail(Assert.java:89)
-	at org.junit.Assert.failNotEquals(Assert.java:835)
-	at org.junit.Assert.assertEquals(Assert.java:647)
-	at org.junit.Assert.assertEquals(Assert.java:633)
-	at HikerStepDef.theScoreIs(HikerStepDef.java:21)
-	at ✽.the score is 42(classpath:Hiker.feature:8)
 
-E
-Time: 0.29
-There was 1 failure:
-1) hitch-hiker playing scrabble in the past(hitch-hiker playing scrabble)
-java.lang.AssertionError: expected:<42> but was:<54>
-	at org.junit.Assert.fail(Assert.java:89)
-	at org.junit.Assert.failNotEquals(Assert.java:835)
-	at org.junit.Assert.assertEquals(Assert.java:647)
-	at org.junit.Assert.assertEquals(Assert.java:633)
-	at HikerStepDef.theScoreIs(HikerStepDef.java:21)
-	at ✽.the score is 42(classpath:Hiker.feature:8)
+Time: 0.247
 
-FAILURES!!!
-Tests run: 1,  Failures: 1
+OK (1 test)
 
