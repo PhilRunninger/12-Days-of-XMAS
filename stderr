@@ -1,37 +1,4 @@
-TwelveDays.java:5: error: illegal character: '`'
-        return `On the first day of Christmas
-               ^
 TwelveDays.java:5: error: ';' expected
-        return `On the first day of Christmas
-                      ^
-TwelveDays.java:5: error: ';' expected
-        return `On the first day of Christmas
-                                ^
-TwelveDays.java:5: error: ';' expected
-        return `On the first day of Christmas
-                                             ^
-TwelveDays.java:6: error: not a statement
-My true love gave to me:
-^
-TwelveDays.java:6: error: ';' expected
-My true love gave to me:
-  ^
-TwelveDays.java:6: error: ';' expected
-My true love gave to me:
-                 ^
-TwelveDays.java:6: error: ';' expected
-My true love gave to me:
-                       ^
-TwelveDays.java:7: error: ';' expected
-A partridge in a pear tree.`
-           ^
-TwelveDays.java:7: error: ';' expected
-A partridge in a pear tree.`
-                ^
-TwelveDays.java:7: error: ';' expected
-A partridge in a pear tree.`
-                          ^
-TwelveDays.java:7: error: illegal character: '`'
-A partridge in a pear tree.`
-                           ^
-12 errors
+        return "On the first day of Christmas\nMy true love gave to me:\nA partridge in a pear tree."
+                                                                                                     ^
+1 error
