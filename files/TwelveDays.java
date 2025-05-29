@@ -4,6 +4,7 @@ public class TwelveDays
 {
     public static String sing()
     {
+        String result = "";
         for (int day=1; day<=12; day++)
         {
             result += sing(day);

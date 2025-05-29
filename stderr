@@ -1,11 +1,4 @@
-TwelveDays.java:9: error: cannot find symbol
-            result += sing(day);
-            ^
-  symbol:   variable result
-  location: class TwelveDays
-TwelveDays.java:11: error: cannot find symbol
-                result += "\n\n";
-                ^
-  symbol:   variable result
-  location: class TwelveDays
-2 errors
+TwelveDays.java:15: error: missing return statement
+    }
+    ^
+1 error
