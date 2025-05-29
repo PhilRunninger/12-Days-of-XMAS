@@ -16,7 +16,7 @@ public class TwelveDaysStepDef {
         loot = TwelveDays.sing(day);
     }
 
-    @Then("I hear {String}")
+    @Then("I hear '{string}'")
     public void IHear(int expected) throws Throwable {
         assertEquals(expected, loot);
     }
