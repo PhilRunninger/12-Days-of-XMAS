@@ -5,29 +5,29 @@ Scenario: hitch-hiker playing scrabble in the past # Hiker.feature:5
   When they spell 6 times 7                        # HikerStepDef.theySpellTimes(int,int)
   Then the score is 42                             # HikerStepDef.theScoreIs(int)
 .
-Scenario: the first day                                                                              # TwelveDays.feature:4
-  Given I am singing                                                                                 # TwelveDaysStepDef.ImSinging()
-  When it is day 1                                                                                   # TwelveDaysStepDef.ItsDay(int)
-  Then I hear 'On the first day of Christmas\nMy true love gave to me:\nA partridge in a pear tree.' # TwelveDaysStepDef.IHear(java.lang.String)
-      org.junit.ComparisonFailure: expected:<...rst day of Christmas[\nMy true love gave to me:\n]A partridge in a pea...> but was:<...rst day of Christmas[
+Scenario: the first day                                                                                # TwelveDays.feature:4
+  Given I am singing                                                                                   # TwelveDaysStepDef.ImSinging()
+  When it is day 1                                                                                     # TwelveDaysStepDef.ItsDay(int)
+  Then I hear '"On the first day of Christmas\nMy true love gave to me:\nA partridge in a pear tree."' # TwelveDaysStepDef.IHear(java.lang.String)
+      org.junit.ComparisonFailure: expected:<["On the first day of Christmas\nMy true love gave to me:\nA partridge in a pear tree."]> but was:<[On the first day of Christmas
 My true love gave to me:
-]A partridge in a pea...>
+A partridge in a pear tree.]>
 	at org.junit.Assert.assertEquals(Assert.java:117)
 	at org.junit.Assert.assertEquals(Assert.java:146)
 	at TwelveDaysStepDef.IHear(TwelveDaysStepDef.java:21)
-	at ✽.I hear 'On the first day of Christmas\nMy true love gave to me:\nA partridge in a pear tree.'(classpath:TwelveDays.feature:7)
+	at ✽.I hear '"On the first day of Christmas\nMy true love gave to me:\nA partridge in a pear tree."'(classpath:TwelveDays.feature:7)
 
 E
-Time: 0.214
+Time: 0.251
 There was 1 failure:
 1) the first day(singing 12 days of Christmas)
-org.junit.ComparisonFailure: expected:<...rst day of Christmas[\nMy true love gave to me:\n]A partridge in a pea...> but was:<...rst day of Christmas[
+org.junit.ComparisonFailure: expected:<["On the first day of Christmas\nMy true love gave to me:\nA partridge in a pear tree."]> but was:<[On the first day of Christmas
 My true love gave to me:
-]A partridge in a pea...>
+A partridge in a pear tree.]>
 	at org.junit.Assert.assertEquals(Assert.java:117)
 	at org.junit.Assert.assertEquals(Assert.java:146)
 	at TwelveDaysStepDef.IHear(TwelveDaysStepDef.java:21)
-	at ✽.I hear 'On the first day of Christmas\nMy true love gave to me:\nA partridge in a pear tree.'(classpath:TwelveDays.feature:7)
+	at ✽.I hear '"On the first day of Christmas\nMy true love gave to me:\nA partridge in a pear tree."'(classpath:TwelveDays.feature:7)
 
 FAILURES!!!
 Tests run: 2,  Failures: 1
