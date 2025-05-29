@@ -315,5 +315,21 @@
       32,
       20700
     ]
+  },
+  {
+    "duration": 3.592188,
+    "colour": "red",
+    "predicted": "none",
+    "revert_if_wrong": "off",
+    "index": 20,
+    "time": [
+      2025,
+      5,
+      29,
+      11,
+      49,
+      32,
+      300610
+    ]
   }
 ]

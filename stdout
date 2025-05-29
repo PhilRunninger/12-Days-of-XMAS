@@ -9,7 +9,7 @@ Scenario: the first day                                                         
   Given I am singing                                                                               # TwelveDaysStepDef.ImSinging()
   When it is day 1                                                                                 # TwelveDaysStepDef.ItsDay(int)
   Then I hear "On the first day of Christmas My true love gave to me: A partridge in a pear tree." # TwelveDaysStepDef.IHear(java.lang.String)
-      org.junit.ComparisonFailure: expected:<...rue love gave to me:[ A partridge in a pear tree.]> but was:<...rue love gave to me:[A partridge in a pear tree]>
+      org.junit.ComparisonFailure: expected:<...ridge in a pear tree[.]> but was:<...ridge in a pear tree[]>
 	at org.junit.Assert.assertEquals(Assert.java:117)
 	at org.junit.Assert.assertEquals(Assert.java:146)
 	at TwelveDaysStepDef.IHear(TwelveDaysStepDef.java:21)
@@ -20,23 +20,23 @@ Scenario: the second day                                                        
   Given I am singing                                                                                                    # TwelveDaysStepDef.ImSinging()
   When it is day 2                                                                                                      # TwelveDaysStepDef.ItsDay(int)
   Then I hear "On the second day of Christmas My true love gave to me: Two turtledoves and A partridge in a pear tree." # TwelveDaysStepDef.IHear(java.lang.String)
-      org.junit.ComparisonFailure: expected:<...rue love gave to me:[ Two turtledoves and A partridge in a pear tree.]> but was:<...rue love gave to me:[Two turtle doves andTwo turtle doves]>
+      org.junit.ComparisonFailure: expected:<...ve to me: Two turtle[doves and A partridge in a pear tree.]> but was:<...ve to me: Two turtle[ doves and Two turtle doves]>
 	at org.junit.Assert.assertEquals(Assert.java:117)
 	at org.junit.Assert.assertEquals(Assert.java:146)
 	at TwelveDaysStepDef.IHear(TwelveDaysStepDef.java:21)
 	at ✽.I hear "On the second day of Christmas My true love gave to me: Two turtledoves and A partridge in a pear tree."(classpath:TwelveDays.feature:12)
 
 E
-Time: 0.262
+Time: 0.257
 There were 2 failures:
 1) the first day(singing 12 days of Christmas)
-org.junit.ComparisonFailure: expected:<...rue love gave to me:[ A partridge in a pear tree.]> but was:<...rue love gave to me:[A partridge in a pear tree]>
+org.junit.ComparisonFailure: expected:<...ridge in a pear tree[.]> but was:<...ridge in a pear tree[]>
 	at org.junit.Assert.assertEquals(Assert.java:117)
 	at org.junit.Assert.assertEquals(Assert.java:146)
 	at TwelveDaysStepDef.IHear(TwelveDaysStepDef.java:21)
 	at ✽.I hear "On the first day of Christmas My true love gave to me: A partridge in a pear tree."(classpath:TwelveDays.feature:7)
 2) the second day(singing 12 days of Christmas)
-org.junit.ComparisonFailure: expected:<...rue love gave to me:[ Two turtledoves and A partridge in a pear tree.]> but was:<...rue love gave to me:[Two turtle doves andTwo turtle doves]>
+org.junit.ComparisonFailure: expected:<...ve to me: Two turtle[doves and A partridge in a pear tree.]> but was:<...ve to me: Two turtle[ doves and Two turtle doves]>
 	at org.junit.Assert.assertEquals(Assert.java:117)
 	at org.junit.Assert.assertEquals(Assert.java:146)
 	at TwelveDaysStepDef.IHear(TwelveDaysStepDef.java:21)
