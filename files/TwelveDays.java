@@ -4,11 +4,12 @@ public class TwelveDays
 {
     public static String sing(int day)
     {
-        String[] days = {"first", "second", "third"};
+        String[] days = {"first", "second", "third", "fourth"};
         String[] loot = {
             "A partridge in a pear tree",
             "Two turtledoves",
-            "Three french hens"};
+            "Three french hens",
+            "Four calling birds"};
 
         String result = String.format("On the %s day of Christmas My true love gave to me:", days[day-1]);
         for (int i=day; i>0; i--)

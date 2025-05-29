@@ -23,21 +23,9 @@ Scenario: the third day                                                         
 Scenario: the third day                                                                                                                                      # TwelveDays.feature:19
   Given I am singing                                                                                                                                         # TwelveDaysStepDef.ImSinging()
   When it is day 4                                                                                                                                           # TwelveDaysStepDef.ItsDay(int)
-      java.lang.ArrayIndexOutOfBoundsException: Index 3 out of bounds for length 3
-	at TwelveDays.sing(TwelveDays.java:13)
-	at TwelveDaysStepDef.ItsDay(TwelveDaysStepDef.java:16)
-	at ✽.it is day 4(classpath:TwelveDays.feature:21)
-
   Then I hear "On the fourth day of Christmas My true love gave to me: Four calling birds Three french hens Two turtledoves and A partridge in a pear tree." # TwelveDaysStepDef.IHear(java.lang.String)
-E
-Time: 0.313
-There was 1 failure:
-1) the third day #2(singing 12 days of Christmas)
-java.lang.ArrayIndexOutOfBoundsException: Index 3 out of bounds for length 3
-	at TwelveDays.sing(TwelveDays.java:13)
-	at TwelveDaysStepDef.ItsDay(TwelveDaysStepDef.java:16)
-	at ✽.it is day 4(classpath:TwelveDays.feature:21)
 
-FAILURES!!!
-Tests run: 5,  Failures: 1
+Time: 0.241
+
+OK (5 tests)
 
