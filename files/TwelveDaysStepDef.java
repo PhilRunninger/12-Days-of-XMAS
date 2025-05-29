@@ -18,6 +18,7 @@ public class TwelveDaysStepDef {
 
     @Then("I hear")
     public void IHear(String expected) throws Throwable {
+        System.out.println("Expected: " + expected);
         assertEquals(expected, loot);
     }
 }

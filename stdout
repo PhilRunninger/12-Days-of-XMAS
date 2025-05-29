@@ -8,6 +8,9 @@ Scenario: hitch-hiker playing scrabble in the past # Hiker.feature:5
 Scenario: the first day # TwelveDays.feature:4
   Given I am singing    # TwelveDaysStepDef.ImSinging()
   When it is day 1      # TwelveDaysStepDef.ItsDay(int)
+Expected: On the first day of Christmas,
+My true love gave to me:
+A partridge in a pear tree.
   Then I hear           # TwelveDaysStepDef.IHear(java.lang.String)
 .
 Scenario: the second day                                                                                                    # TwelveDays.feature:13
@@ -25,7 +28,7 @@ Scenario: the third day                                                         
   When it is day 4                                                                                                                                                 # TwelveDaysStepDef.ItsDay(int)
   Then I hear "On the fourth day of Christmas,\nMy true love gave to me:\nFour calling birds\nThree french hens\nTwo turtledoves and\nA partridge in a pear tree."
 E
-Time: 0.241
+Time: 0.341
 There were 3 failures:
 1) the second day(singing 12 days of Christmas)
 io.cucumber.junit.UndefinedStepException: The step 'I hear "On the second day of Christmas,\nMy true love gave to me:\nTwo turtledoves and\nA partridge in a pear tree."' is undefined.
