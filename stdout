@@ -8,59 +8,24 @@ Scenario: hitch-hiker playing scrabble in the past # Hiker.feature:5
 Scenario: the first day # TwelveDays.feature:4
   Given I am singing    # TwelveDaysStepDef.ImSinging()
   When it is day 1      # TwelveDaysStepDef.ItsDay(int)
-Expected: On the first day of Christmas,
-My true love gave to me:
-A partridge in a pear tree.
   Then I hear           # TwelveDaysStepDef.IHear(java.lang.String)
 .
-Scenario: the second day                                                                                                    # TwelveDays.feature:13
-  Given I am singing                                                                                                        # TwelveDaysStepDef.ImSinging()
-  When it is day 2                                                                                                          # TwelveDaysStepDef.ItsDay(int)
-  Then I hear "On the second day of Christmas,\nMy true love gave to me:\nTwo turtledoves and\nA partridge in a pear tree."
-E.
-Scenario: the third day                                                                                                                       # TwelveDays.feature:18
-  Given I am singing                                                                                                                          # TwelveDaysStepDef.ImSinging()
-  When it is day 3                                                                                                                            # TwelveDaysStepDef.ItsDay(int)
-  Then I hear "On the third day of Christmas,\nMy true love gave to me:\nThree french hens\nTwo turtledoves and\nA partridge in a pear tree."
-E.
-Scenario: the third day                                                                                                                                            # TwelveDays.feature:23
-  Given I am singing                                                                                                                                               # TwelveDaysStepDef.ImSinging()
-  When it is day 4                                                                                                                                                 # TwelveDaysStepDef.ItsDay(int)
-  Then I hear "On the fourth day of Christmas,\nMy true love gave to me:\nFour calling birds\nThree french hens\nTwo turtledoves and\nA partridge in a pear tree."
-E
-Time: 0.341
-There were 3 failures:
-1) the second day(singing 12 days of Christmas)
-io.cucumber.junit.UndefinedStepException: The step 'I hear "On the second day of Christmas,\nMy true love gave to me:\nTwo turtledoves and\nA partridge in a pear tree."' is undefined.
-You can implement this step using the snippet(s) below:
+Scenario: the second day # TwelveDays.feature:14
+  Given I am singing     # TwelveDaysStepDef.ImSinging()
+  When it is day 2       # TwelveDaysStepDef.ItsDay(int)
+  Then I hear            # TwelveDaysStepDef.IHear(java.lang.String)
+.
+Scenario: the third day # TwelveDays.feature:25
+  Given I am singing    # TwelveDaysStepDef.ImSinging()
+  When it is day 3      # TwelveDaysStepDef.ItsDay(int)
+  Then I hear           # TwelveDaysStepDef.IHear(java.lang.String)
+.
+Scenario: the third day # TwelveDays.feature:37
+  Given I am singing    # TwelveDaysStepDef.ImSinging()
+  When it is day 4      # TwelveDaysStepDef.ItsDay(int)
+  Then I hear           # TwelveDaysStepDef.IHear(java.lang.String)
 
-@Then("I hear {string}")
-public void i_hear(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
+Time: 0.212
 
-2) the third day #1(singing 12 days of Christmas)
-io.cucumber.junit.UndefinedStepException: The step 'I hear "On the third day of Christmas,\nMy true love gave to me:\nThree french hens\nTwo turtledoves and\nA partridge in a pear tree."' is undefined.
-You can implement this step using the snippet(s) below:
-
-@Then("I hear {string}")
-public void i_hear(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-3) the third day #2(singing 12 days of Christmas)
-io.cucumber.junit.UndefinedStepException: The step 'I hear "On the fourth day of Christmas,\nMy true love gave to me:\nFour calling birds\nThree french hens\nTwo turtledoves and\nA partridge in a pear tree."' is undefined.
-You can implement this step using the snippet(s) below:
-
-@Then("I hear {string}")
-public void i_hear(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-
-FAILURES!!!
-Tests run: 5,  Failures: 3
+OK (5 tests)
 
