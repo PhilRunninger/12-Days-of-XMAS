@@ -1,0 +1,7 @@
+TwelveDays.java:36: error: non-static variable days cannot be referenced from a static context
+        String result = String.format("On the %s day of Christmas%s\nMy true love gave to me:", days[day-1], (day > 5) ? "," : "");
+                                                                                                ^
+TwelveDays.java:39: error: non-static variable loot cannot be referenced from a static context
+            result += String.format("\n%s", loot[i-1]);
+                                            ^
+2 errors
