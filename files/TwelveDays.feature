@@ -15,3 +15,8 @@ Rule: sing the right lyrics
     Given I am singing
     When it is day 3
     Then I hear "On the third day of Christmas My true love gave to me: Three french hens Two turtledoves and A partridge in a pear tree."
+    
+      Scenario: the third day
+    Given I am singing
+    When it is day 4
+    Then I hear "On the fourth day of Christmas My true love gave to me: Four calling birds Three french hens Two turtledoves and A partridge in a pear tree."
