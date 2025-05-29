@@ -2,8 +2,8 @@ import java.util.HashMap;
 
 public class TwelveDays
 {
-    private String[] days = {"first", "second", "third", "fourth", "fifth", "sixth", "seventh", "eighth", "ninth", "tenth", "eleventh", "twelfth"};
-    private String[] loot = {
+    private static String[] days = {"first", "second", "third", "fourth", "fifth", "sixth", "seventh", "eighth", "ninth", "tenth", "eleventh", "twelfth"};
+    private static String[] loot = {
         "A partridge in a pear tree",
         "Two turtle doves",
         "Three french hens",
