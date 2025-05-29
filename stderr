@@ -1,0 +1,6 @@
+TwelveDaysStepDef.java:16: error: cannot find symbol
+        loot = TwelveDays.sing(day);
+               ^
+  symbol:   variable TwelveDays
+  location: class TwelveDaysStepDef
+1 error
