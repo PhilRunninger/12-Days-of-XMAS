@@ -12,6 +12,7 @@ public class TwelveDays
                 result += "\n\n";
             }
         }
+        return result;
     }
     
     public static String sing(int day)
