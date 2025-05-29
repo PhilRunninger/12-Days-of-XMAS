@@ -2,6 +2,15 @@ import java.util.HashMap;
 
 public class TwelveDays
 {
+    public static String sing()
+    {
+        for (int day=1; day<=12; day++)
+        {
+            result += sing(day);
+            if (day < 12) result += "\n\n";
+        }
+    }
+    
     public static String sing(int day)
     {
         String[] days = {"first", "second", "third", "fourth"};

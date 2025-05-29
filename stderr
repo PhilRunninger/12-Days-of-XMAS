@@ -1,7 +1,11 @@
-TwelveDaysStepDef.java:16: error: method sing in class TwelveDays cannot be applied to given types;
-        loot = TwelveDays.sing();
-                         ^
-  required: int
-  found:    no arguments
-  reason: actual and formal argument lists differ in length
-1 error
+TwelveDays.java:9: error: cannot find symbol
+            result += sing(day);
+            ^
+  symbol:   variable result
+  location: class TwelveDays
+TwelveDays.java:10: error: cannot find symbol
+            if (day < 12) result += "\n\n";
+                          ^
+  symbol:   variable result
+  location: class TwelveDays
+2 errors

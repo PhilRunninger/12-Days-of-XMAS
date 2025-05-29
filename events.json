@@ -635,5 +635,21 @@
       30,
       773053
     ]
+  },
+  {
+    "duration": 2.526939,
+    "colour": "amber",
+    "predicted": "none",
+    "revert_if_wrong": "off",
+    "index": 40,
+    "time": [
+      2025,
+      5,
+      29,
+      12,
+      57,
+      23,
+      314294
+    ]
   }
 ]
