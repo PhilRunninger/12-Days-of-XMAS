@@ -13,7 +13,7 @@ public class TwelveDays
             if (i == 1 && day > 1) {
                 result += " and";
             }
-            result += String.format(" %s", loot[day-1]);
+            result += String.format(" %s", loot[i-1]);
         }
         result += ".";
         return result;
