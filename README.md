@@ -1,14 +1,5 @@
-# This a copy of [your cyber-dojo exercise](https://cyber-dojo.org/kata/edit/2pNnrF):
+# This a copy of [my cyber-dojo exercise](https://cyber-dojo.org/kata/edit/2pNnrF):
 - Exercise: `12 Days of Xmas`
 - Language & test-framework: `Java 21, Cucumber 7.20.1 with JUnit 4`
 
-## How to upload your cyber-dojo exercise to GitHub:
-- Go to your github on browser.
-- Create a new repo for your cyber-dojo practice. For example `cyber-dojo-2021-7-11-bR2hnf`
-- Execute the instructions shown in GitHub to 'push an existing repository from the command line'
-The instructions will look like this:
-```
-git remote add origin https://github.com/diegopego/cyber-dojo-2021-7-11-bR2hnf.git
-git branch -M main
-git push -u origin main
-```
+This is my first time using Cucumber and Java together. Also relatively new to Java, which thankfully is very similar to C#.
