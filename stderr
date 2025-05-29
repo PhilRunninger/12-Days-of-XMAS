@@ -1,4 +1,0 @@
-TwelveDaysStepDef.java:16: error: non-static method sing(int) cannot be referenced from a static context
-        loot = TwelveDays.sing(day);
-                         ^
-1 error
