@@ -6,7 +6,7 @@ Rule: sing the right lyrics
     When it is day 1
     Then I hear
         """
-        On the first day of Christmas,
+        On the first day of Christmas
         My true love gave to me:
         A partridge in a pear tree.
         """
@@ -16,7 +16,7 @@ Rule: sing the right lyrics
     When it is day 2
     Then I hear
         """
-        On the second day of Christmas,
+        On the second day of Christmas
         My true love gave to me:
         Two turtle doves and
         A partridge in a pear tree.
@@ -27,7 +27,7 @@ Rule: sing the right lyrics
     When it is day 3
     Then I hear
         """
-        On the third day of Christmas,
+        On the third day of Christmas
         My true love gave to me:
         Three french hens
         Two turtle doves and
@@ -39,7 +39,7 @@ Rule: sing the right lyrics
     When it is day 4
     Then I hear
         """
-        On the fourth day of Christmas,
+        On the fourth day of Christmas
         My true love gave to me:
         Four calling birds
         Three french hens
