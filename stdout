@@ -1,5 +1,5 @@
 JUnit version 4.13.2
-.E      io.cucumber.core.exception.CucumberException: Could not create a cucumber expression for 'I hear "{String}"'.
+.E      io.cucumber.core.exception.CucumberException: Could not create a cucumber expression for 'I hear {String}'.
 It appears you did not register a parameter type.
 	at io.cucumber.core.stepexpression.StepExpressionFactory.registerTypeInConfiguration(StepExpressionFactory.java:99)
 	at io.cucumber.core.stepexpression.StepExpressionFactory.crateExpression(StepExpressionFactory.java:93)
@@ -50,10 +50,10 @@ It appears you did not register a parameter type.
 	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
 	at org.junit.runner.JUnitCore.runMain(JUnitCore.java:77)
 	at org.junit.runner.JUnitCore.main(JUnitCore.java:36)
-Caused by: io.cucumber.cucumberexpressions.UndefinedParameterTypeException: This Cucumber Expression has a problem at column 9:
+Caused by: io.cucumber.cucumberexpressions.UndefinedParameterTypeException: This Cucumber Expression has a problem at column 8:
 
-I hear "{String}"
-        ^------^
+I hear {String}
+       ^------^
 Undefined parameter type 'String'.
 Please register a ParameterType for 'String'
 	at io.cucumber.cucumberexpressions.UndefinedParameterTypeException.createUndefinedParameterType(UndefinedParameterTypeException.java:20)
@@ -74,10 +74,10 @@ Please register a ParameterType for 'String'
 	... 47 more
 
 E
-Time: 0.267
+Time: 0.231
 There were 2 failures:
 1) hitch-hiker playing scrabble in the past(hitch-hiker playing scrabble)
-io.cucumber.core.exception.CucumberException: Could not create a cucumber expression for 'I hear "{String}"'.
+io.cucumber.core.exception.CucumberException: Could not create a cucumber expression for 'I hear {String}'.
 It appears you did not register a parameter type.
 	at io.cucumber.core.stepexpression.StepExpressionFactory.registerTypeInConfiguration(StepExpressionFactory.java:99)
 	at io.cucumber.core.stepexpression.StepExpressionFactory.crateExpression(StepExpressionFactory.java:93)
@@ -128,10 +128,10 @@ It appears you did not register a parameter type.
 	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
 	at org.junit.runner.JUnitCore.runMain(JUnitCore.java:77)
 	at org.junit.runner.JUnitCore.main(JUnitCore.java:36)
-Caused by: io.cucumber.cucumberexpressions.UndefinedParameterTypeException: This Cucumber Expression has a problem at column 9:
+Caused by: io.cucumber.cucumberexpressions.UndefinedParameterTypeException: This Cucumber Expression has a problem at column 8:
 
-I hear "{String}"
-        ^------^
+I hear {String}
+       ^------^
 Undefined parameter type 'String'.
 Please register a ParameterType for 'String'
 	at io.cucumber.cucumberexpressions.UndefinedParameterTypeException.createUndefinedParameterType(UndefinedParameterTypeException.java:20)
@@ -151,7 +151,7 @@ Please register a ParameterType for 'String'
 	at io.cucumber.core.stepexpression.StepExpressionFactory.crateExpression(StepExpressionFactory.java:88)
 	... 47 more
 2) RunCukesTest
-io.cucumber.core.exception.CucumberException: Could not create a cucumber expression for 'I hear "{String}"'.
+io.cucumber.core.exception.CucumberException: Could not create a cucumber expression for 'I hear {String}'.
 It appears you did not register a parameter type.
 	at io.cucumber.core.stepexpression.StepExpressionFactory.registerTypeInConfiguration(StepExpressionFactory.java:99)
 	at io.cucumber.core.stepexpression.StepExpressionFactory.crateExpression(StepExpressionFactory.java:93)
@@ -202,10 +202,10 @@ It appears you did not register a parameter type.
 	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
 	at org.junit.runner.JUnitCore.runMain(JUnitCore.java:77)
 	at org.junit.runner.JUnitCore.main(JUnitCore.java:36)
-Caused by: io.cucumber.cucumberexpressions.UndefinedParameterTypeException: This Cucumber Expression has a problem at column 9:
+Caused by: io.cucumber.cucumberexpressions.UndefinedParameterTypeException: This Cucumber Expression has a problem at column 8:
 
-I hear "{String}"
-        ^------^
+I hear {String}
+       ^------^
 Undefined parameter type 'String'.
 Please register a ParameterType for 'String'
 	at io.cucumber.cucumberexpressions.UndefinedParameterTypeException.createUndefinedParameterType(UndefinedParameterTypeException.java:20)

@@ -7,16 +7,16 @@ public class TwelveDaysStepDef {
 
     private String loot;
 
-    @Given("I'm singing")
+    @Given("I am singing")
     public void ImSinging() throws Throwable {
     }
 
-    @When("it's day {int}")
+    @When("it is day {int}")
     public void ItsDay(int day) throws Throwable {
         loot = TwelveDays.sing(day);
     }
 
-    @Then("I hear \"{String}\"")
+    @Then("I hear {String}")
     public void IHear(int expected) throws Throwable {
         assertEquals(expected, loot);
     }
