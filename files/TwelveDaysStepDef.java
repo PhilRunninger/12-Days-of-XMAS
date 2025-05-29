@@ -11,11 +11,17 @@ public class TwelveDaysStepDef {
     public void ImSinging() throws Throwable {
     }
 
+    @Given("I am singing the whole song")
+    public void ImSingingTheWholeSong() throws Throwable {
+        loot = TwelveDays.sing();
+    }
+
+
     @When("it is day {int}")
     public void ItsDay(int day) throws Throwable {
         loot = TwelveDays.sing(day);
     }
-
+    
     @Then("I hear")
     public void IHear(String expected) throws Throwable {
         assertEquals(expected, loot);
