@@ -34,7 +34,7 @@ Rule: sing the right lyrics
         A partridge in a pear tree.
         """
 
-  Scenario: the third day
+  Scenario: the fourth day
     Given I am singing
     When it is day 4
     Then I hear
